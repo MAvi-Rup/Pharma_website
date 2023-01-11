@@ -9,7 +9,7 @@ const ProductCard = ({product}) => {
     }
     return (
         <div className='col-md-3 pe-3 mb-5'>
-           <img onClick={()=>{navigateProduct(product.id)}} src={product.img} alt="" />
+           <img onClick={()=>{navigateProduct(product._id)}} src={product.img} alt="" />
         </div>
     );
 };
