@@ -12,7 +12,7 @@ const OurOrigin = () => {
                     <p>
                         Beximco Pharmaceuticals Ltd. (Beximco Pharma) is an emerging generic drug player committed to providing access to affordable medicines. Company’s state-of-the-art manufacturing facilities have been accredited by the regulatory authorities of USA, Australia, European Union, Canada, and Brazil, among others, and it currently focuses on building presence in many emerging and developed markets around the world.</p>
 
-                       <p> Beximco Pharma is consistently building upon its portfolio and currently producing more than 500 products encompassing broad therapeutic categories and the Company has created strong differentiation by offering a range of high-tech, specialized products which are difficult to imitate.
+                    <p> Beximco Pharma is consistently building upon its portfolio and currently producing more than 500 products encompassing broad therapeutic categories and the Company has created strong differentiation by offering a range of high-tech, specialized products which are difficult to imitate.
                     </p>
                 </div>
             </div>
