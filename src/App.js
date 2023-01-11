@@ -1,24 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar';
-import Carousel from './Components/Carousel';
-import OurOrigin from './Components/Home/OurOrigin';
-import Research from './Components/Home/Research';
-import Event from './Components/Home/Event';
-import Global from './Components/Home/Global';
-import SpecialProducts from './Components/Home/SpecialProducts';
+import Home from './Components/Home/Home';
+import { Route, Routes } from 'react-router-dom';
+import ProductDetails from './Components/Home/ProductDetails';
+
 
 function App() {
   return (
     <div>
       <Navbar></Navbar>
-      <Carousel></Carousel>
-      <OurOrigin></OurOrigin>
-      <SpecialProducts></SpecialProducts>
-      <Research></Research>
-      <Event></Event>
-      <Global></Global>
-      
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/specialproduct/:id' element={<ProductDetails></ProductDetails>}></Route>
+      </Routes>
     </div>
   );
 }
