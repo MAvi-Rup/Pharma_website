@@ -7,7 +7,7 @@ const SpecialProducts = () => {
         fetch('http://localhost:5000/specialProducts')
             .then(res => res.json())
             .then(data => setProducts(data))
-    })
+    },[])
     return (
         <div className='bg-primary'>
             <div className="container pt-5 mb-5">

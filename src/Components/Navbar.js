@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <Link class="navbar-brand" to="/">
             <img src="./favicon.png" alt="Home" width="30" height="24" />
-          </a>
+          </Link>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -24,7 +25,7 @@ const Navbar = () => {
                   About
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><Link class="dropdown-item" to="/aboutus">About Us</Link></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></hr></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -32,10 +33,10 @@ const Navbar = () => {
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle me-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Product
+                  Product Menu
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><Link class="dropdown-item" to="/ourproductsdesc">Our Products</Link></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></hr></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -43,10 +44,10 @@ const Navbar = () => {
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle me-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Investor
+                  Investor Menu
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><Link class="dropdown-item" to="/investor">Investors</Link></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></hr></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -54,10 +55,10 @@ const Navbar = () => {
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle me-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Health
+                  Health Menu
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><Link class="dropdown-item" to="/health">Health</Link></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></hr></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>

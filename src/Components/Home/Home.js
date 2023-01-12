@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from '../Carousel';
+import AllProducts from './AllProducts';
 import Event from './Event';
 import Global from './Global';
 import OurOrigin from './OurOrigin';
@@ -14,7 +15,9 @@ const Home = () => {
             <SpecialProducts />
             <Research />
             <Event />
+            <AllProducts />
             <Global />
+            
         </div>
     );
 };
