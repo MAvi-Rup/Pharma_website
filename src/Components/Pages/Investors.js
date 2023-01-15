@@ -46,7 +46,7 @@ const Investors = () => {
                 <div className='col-md-4'>
                     <div className='ps-5 pe-5'>
                         <img width="238" src="https://beximco-pharma.com/cdn/bpl/investor/Financial-Reports.jpg" alt="" />
-                        <h1 className='mb-3 mt-2 text-primary'>Research & development</h1>
+                        <h1 className='mb-3 mt-2 text-primary'>Financial Report</h1>
                         <p>This section contains Company’s Quarterly, Half Yearly, and Annual reports of different years.</p>
                         <a className='text-decoration-none' href="#">View Details <img src="https://www.beximcopharma.com/images/right-arrow.svg" alt="" /></a>
 
