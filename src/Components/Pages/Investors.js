@@ -54,6 +54,25 @@ const Investors = () => {
                 </div>
             </div>
         </div>
+        <div className='container-fluid bg-primary pt-5 pb-5 mt-5'>
+            <div className='row w-75 m-auto'>
+                <div className='col-md-8 pt-5 pb-5'>
+                    <img className='img-fluid' src="./img/director.jpg" width='545' alt="" />
+                     
+                </div>
+                <div className='col-md-4 pt-5 pb-5'>
+                <p className='pb-5 fs-1 text-white'>Board of <br/><span className='border-bottom border-white pb-3'>Direc</span>tors</p>
+                <p className='fs-5 text-white'>Provides biographical details of the members of the Board of Directors including Independent Directors.</p>
+
+                <button className='btn pt-2 pb-2 bg-white text-primary'>Board of Directors <img src="https://www.beximcopharma.com/images/right-arrow.svg" alt="" /></button>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
         </>
     );
 };

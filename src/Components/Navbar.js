@@ -66,10 +66,10 @@ const Navbar = () => {
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle me-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Newsroom
+                  Newsroom Menu
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><Link class="dropdown-item" to="/newsroom">Newsroom</Link></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></hr></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
