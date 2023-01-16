@@ -11,6 +11,7 @@ import Investors from './Components/Pages/Investors';
 import OurProducts from './Components/Pages/OurProducts';
 import Health from './Components/Pages/Health';
 import Newsroom from './Components/Pages/Newsroom';
+import Mission from './Components/Pages/About/Mission';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path='/aboutus' element={<Aboutus />}></Route>
         <Route path='/investor' element={<Investors />}></Route>
         <Route path='/newsroom' element={<Newsroom />}></Route>
+        <Route path='/mission' element={<Mission />}></Route>
         <Route path='/ourproductsdesc' element={<OurProducts />}></Route>
         <Route path='/health' element={<Health />}></Route>
         <Route path='/specialproduct/:id' element={<ProductDetails></ProductDetails>}></Route>
