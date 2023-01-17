@@ -27,6 +27,7 @@ const Navbar = () => {
                 <ul class="dropdown-menu">
                   <li><Link class="dropdown-item" to="/aboutus">About Us</Link></li>
                   <li><Link class="dropdown-item" to="/mission">Mission & Vision</Link></li>
+                  <li><Link class="dropdown-item" to="/ourpeople">Our People</Link></li>
                   
                 </ul>
               </li>

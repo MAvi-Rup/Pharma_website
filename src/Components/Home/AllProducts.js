@@ -22,6 +22,7 @@ const AllProducts = () => {
                        {
                         product.map((product=><div className="col-md-3 pe-2 pb-3"><img onClick={()=>{navigateProduct(product._id)}} src={product.img} width='255px' /> </div>))
                        }
+                       {allProducts.length>8 ?<button className='btn btn-primary' onClick={()=>{allProducts.map((product2=><div className="col-md-3 pe-2 pb-3"><img onClick={()=>{navigateProduct(product2._id)}} src={product2.img} width='255px' /> </div>))}}>Load More</button> :<></>}
                 </div>
             </div>
         </div>

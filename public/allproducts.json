@@ -1,6 +1,6 @@
 [
     {
-      "title": "EMORIVIR",
+      "title": "TMORIVIR",
       "generic":"Molnupiravir",
       "dosage":"Capsule",
       "tg":"Antiviral",
@@ -17,7 +17,7 @@
       "img": "https://beximco-pharma.com/cdn/bpl/product/img/emovir-1.jpg"
     },
     {
-      "title": "EMORIVIR",
+      "title": "HMORIVIR",
       "generic":"Molnupiravir",
       "dosage":"Capsule",
       "tg":"Antiviral",
@@ -34,7 +34,7 @@
       "img": "https://beximco-pharma.com/cdn/bpl/product/img/emovir-1.jpg"
     },
     {
-      "title": "EMORIVIR",
+      "title": "CMORIVIR",
       "generic":"Molnupiravir",
       "dosage":"Capsule",
       "tg":"Antiviral",
@@ -51,7 +51,7 @@
       "img": "https://beximco-pharma.com/cdn/bpl/product/img/emovir-1.jpg"
     },
     {
-      "title": "Barri 4",
+      "title": "Aarri 4",
       "generic":"Baricitinib 4 mg",
       "dosage":"Tablet",
       "tg":"Musculoskeletal",
@@ -68,7 +68,7 @@
       "img": "https://beximco-pharma.com/cdn/bpl/product/img/barri-1.jpg"
     },
     {
-      "title": "Barri 4",
+      "title": "Darri 4",
       "generic":"Baricitinib 4 mg",
       "dosage":"Tablet",
       "tg":"Musculoskeletal",
@@ -85,7 +85,7 @@
       "img": "https://beximco-pharma.com/cdn/bpl/product/img/barri-1.jpg"
     },
     {
-      "title": "Barri 4",
+      "title": "Harri 4",
       "generic":"Baricitinib 4 mg",
       "dosage":"Tablet",
       "tg":"Musculoskeletal",
@@ -102,7 +102,7 @@
       "img": "https://beximco-pharma.com/cdn/bpl/product/img/barri-1.jpg"
     },
     {
-      "title": "Tribrez",
+      "title": "Zribrez",
       "generic":"Molnupiravir",
       "dosage":"Capsule",
       "tg":"Antiviral",
