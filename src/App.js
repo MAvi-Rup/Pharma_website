@@ -13,6 +13,9 @@ import Health from './Components/Pages/Health';
 import Newsroom from './Components/Pages/Newsroom';
 import Mission from './Components/Pages/About/Mission';
 import OurPeople from './Components/Pages/About/OurPeople';
+import OurProductRange from './Components/Pages/Products/OurProductRange';
+import CompanyInfo from './Components/Pages/Investor/CompanyInfo';
+import HealthCOncern from './Components/Pages/Health/HealthCOncern';
 
 
 function App() {
@@ -26,8 +29,11 @@ function App() {
         <Route path='/newsroom' element={<Newsroom />}></Route>
         <Route path='/mission' element={<Mission />}></Route>
         <Route path='/ourpeople' element={<OurPeople />}></Route>
+        <Route path='/company-info' element={<CompanyInfo />}></Route>
+        <Route path='/product-range' element={<OurProductRange />}></Route>
         <Route path='/ourproductsdesc' element={<OurProducts />}></Route>
         <Route path='/health' element={<Health />}></Route>
+        <Route path='/health-concern' element={<HealthCOncern />}></Route>
         <Route path='/specialproduct/:id' element={<ProductDetails></ProductDetails>}></Route>
         <Route path='/allproduct/:id' element={<AllProductsDetails />}></Route>
       </Routes>

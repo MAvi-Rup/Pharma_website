@@ -7,6 +7,7 @@ const Carousel = () => {
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -17,6 +18,9 @@ const Carousel = () => {
     </div>
     <div class="carousel-item">
       <img src="https://i.ibb.co/WsBqXPS/img3.jpg" class="d-block w-100" alt="..." />
+    </div>
+    <div class="carousel-item">
+      <img src="https://beximco-pharma.com/cdn/bpl/slider/Corporate-Slider-affordable-medicine.jpg" class="d-block w-100" alt="..." />
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

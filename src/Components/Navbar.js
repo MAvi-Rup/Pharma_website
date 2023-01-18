@@ -37,9 +37,7 @@ const Navbar = () => {
                 </a>
                 <ul class="dropdown-menu">
                   <li><Link class="dropdown-item" to="/ourproductsdesc">Our Products</Link></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></hr></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><Link class="dropdown-item" to="/product-range">Product Range</Link></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -48,9 +46,8 @@ const Navbar = () => {
                 </a>
                 <ul class="dropdown-menu">
                   <li><Link class="dropdown-item" to="/investor">Investors</Link></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></hr></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><Link class="dropdown-item" to="/company-info">Company Info</Link></li>
+                  
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -59,9 +56,8 @@ const Navbar = () => {
                 </a>
                 <ul class="dropdown-menu">
                   <li><Link class="dropdown-item" to="/health">Health</Link></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></hr></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><Link class="dropdown-item" to="/health-concern">Health Concern</Link></li>
+                  
                 </ul>
               </li>
               <li class="nav-item dropdown">
