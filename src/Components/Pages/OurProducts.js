@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchProducts from './Products/SearchProducts';
 
 const OurProducts = () => {
     return (
@@ -37,6 +38,7 @@ const OurProducts = () => {
                     <div className='col-12'>
                         <p className='pb-5 fs-1'><span className='border-bottom border-primary pb-3'>Bexim</span>mco Brands</p>
                     </div>
+                    <SearchProducts />
 
                 </div>
 
