@@ -16,6 +16,7 @@ import OurPeople from './Components/Pages/About/OurPeople';
 import OurProductRange from './Components/Pages/Products/OurProductRange';
 import CompanyInfo from './Components/Pages/Investor/CompanyInfo';
 import HealthCOncern from './Components/Pages/Health/HealthCOncern';
+import ContactUs from './Components/Pages/ContactUs';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path='/mission' element={<Mission />}></Route>
         <Route path='/ourpeople' element={<OurPeople />}></Route>
         <Route path='/company-info' element={<CompanyInfo />}></Route>
+        <Route path='/contact-us' element={<ContactUs />}></Route>
         <Route path='/product-range' element={<OurProductRange />}></Route>
         <Route path='/ourproductsdesc' element={<OurProducts />}></Route>
         <Route path='/health' element={<Health />}></Route>

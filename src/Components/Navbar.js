@@ -28,7 +28,7 @@ const Navbar = () => {
                   <li><Link class="dropdown-item" to="/aboutus">About Us</Link></li>
                   <li><Link class="dropdown-item" to="/mission">Mission & Vision</Link></li>
                   <li><Link class="dropdown-item" to="/ourpeople">Our People</Link></li>
-                  
+
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -47,7 +47,7 @@ const Navbar = () => {
                 <ul class="dropdown-menu">
                   <li><Link class="dropdown-item" to="/investor">Investors</Link></li>
                   <li><Link class="dropdown-item" to="/company-info">Company Info</Link></li>
-                  
+
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -57,42 +57,16 @@ const Navbar = () => {
                 <ul class="dropdown-menu">
                   <li><Link class="dropdown-item" to="/health">Health</Link></li>
                   <li><Link class="dropdown-item" to="/health-concern">Health Concern</Link></li>
-                  
+
                 </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle me-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Newsroom Menu
-                </a>
-                <ul class="dropdown-menu">
-                  <li><Link class="dropdown-item" to="/newsroom">Newsroom</Link></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></hr></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li class="nav-item">
+                <Link className='nav-link me-5' to="/newsroom">Newsroom</Link>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle me-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Career
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></hr></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li class="nav-item">
+                <Link className='nav-link me-5' to="/contact-us">Contact Us</Link>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle me-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Contact
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></hr></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
+              
               {/* <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
               </li> */}
