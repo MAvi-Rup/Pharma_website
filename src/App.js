@@ -17,6 +17,8 @@ import OurProductRange from './Components/Pages/Products/OurProductRange';
 import CompanyInfo from './Components/Pages/Investor/CompanyInfo';
 import HealthCOncern from './Components/Pages/Health/HealthCOncern';
 import ContactUs from './Components/Pages/ContactUs';
+import Login from './Components/Pages/Login/Login';
+import Signup from './Components/Pages/Login/Signup';
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/aboutus' element={<Aboutus />}></Route>
+        <Route path='/login' element={<Login />}></Route>
+        <Route path='/register' element={<Signup />}></Route>
         <Route path='/investor' element={<Investors />}></Route>
         <Route path='/newsroom' element={<Newsroom />}></Route>
         <Route path='/mission' element={<Mission />}></Route>

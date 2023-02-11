@@ -31,6 +31,7 @@ const Navbar = () => {
 
                 </ul>
               </li>
+              
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle me-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Product Menu
@@ -70,6 +71,13 @@ const Navbar = () => {
               {/* <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
               </li> */}
+            </ul>
+            <ul className='navbar-nav ms-auto mb-5 mb-lg-0'>
+              <li className='nav-item me-4'>
+                <Link className='nav-link' to='/login'>Login</Link>
+
+              </li>
+
             </ul>
             {/* <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
