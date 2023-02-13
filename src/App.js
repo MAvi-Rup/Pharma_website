@@ -23,6 +23,9 @@ import Signin from './Components/Pages/Login/Signin';
 import AdminDashboard from './Components/Pages/Dashboard/AdminDashboard';
 import SalesGraph from './Components/Pages/Dashboard/SalesGraph';
 import RequireAuth from './Components/RequireAuth';
+import SalesBarChart from './Components/Pages/Dashboard/SalesBarChart';
+import GrossRevenue from './Components/Pages/Dashboard/GrossRevenue';
+import AllEmployee from './Components/Pages/Dashboard/AllEmployee';
 
 
 function App() {
@@ -42,6 +45,9 @@ function App() {
         <Route path='/ourpeople' element={<OurPeople />}></Route>
         <Route path="/admin" element={<RequireAuth><AdminDashboard /></RequireAuth>} >
           <Route path='sales' element={<SalesGraph />}></Route>
+          <Route path='yearly-sales' element={<SalesBarChart />}></Route>
+          <Route path='gross-revenue' element={<GrossRevenue />}></Route>
+          <Route path='all-employee' element={<AllEmployee />}></Route>
           {/* <Route index element={<MyProfile></MyProfile>}></Route>
           <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
           <Route path="addproduct" element={<RequireAdmin><AddProduct></AddProduct></RequireAdmin>}></Route>

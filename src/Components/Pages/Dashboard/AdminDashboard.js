@@ -16,9 +16,9 @@ const AdminDashboard = () => {
     return (
         <>
             <Navbar bg="primary" expand="lg" style={{ marginTop: '-18px' }}>
-                <Navbar.Brand href="#" style={{ color: "#fff" }} className="container">
+                <Link to='/admin' style={{ color: "#fff" }} className="container navbar-brand">
                     Admin Dashboard
-                </Navbar.Brand>
+                </Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto" style={{ color: "#fff" }}>
@@ -32,21 +32,22 @@ const AdminDashboard = () => {
                     <Col md={2} style={{ backgroundColor: "#f2f2f2" }}>
                         <Nav defaultActiveKey="/home" className="flex-column">
                             <Link className="nav-link" to="/admin">Dashboard</Link>
-                            <Nav.Link href="#">All Employees</Nav.Link>
+                            <Link className="nav-link" to="all-employee">All Employee</Link>
+                            
                             {/* <NavDropdown title="Reports" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#">Sales Report</NavDropdown.Item>
                 <NavDropdown.Item href="#">Gross Revenue</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#">Yearly Sales</NavDropdown.Item>
               </NavDropdown> */}
-                            <Nav.Link  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <Nav.Link className="dropdown-toggle"  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                                 Reports
                             </Nav.Link>
                             <div class="collapse ms-3" id="collapseExample">
                             <Link className="nav-link" to="sales">Sales Report</Link>
-                            <Nav.Link href="#">Gross Revenue</Nav.Link>
+                            <Link className="nav-link" to="gross-revenue">Gross Revenue</Link>
                             <NavDropdown.Divider />
-                            <Nav.Link href="#">Yearly Sales</Nav.Link>
+                            <Link className="nav-link" to="yearly-sales">Yearly Sales</Link>
                                 
                             </div>
                         </Nav>

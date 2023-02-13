@@ -43,7 +43,7 @@ const SalesGraph = () => {
     return (
         <div className='container d-flex flex-wrap'> 
           <LineChart className='p-3' width={550} height={500} data={data} >
-            <Line dataKey={'investment'}></Line>
+            <Line dataKey={'investment'}>TK</Line>
             <Line dataKey={'sell'}></Line>
             <Line dataKey={'revenue'}></Line>
             <YAxis></YAxis>

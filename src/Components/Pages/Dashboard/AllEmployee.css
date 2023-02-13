@@ -1,0 +1,17 @@
+.employee-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  
+  .employee-card {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px #ccc;
+    text-align: center;
+  }
+  
