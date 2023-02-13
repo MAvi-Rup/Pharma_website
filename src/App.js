@@ -37,11 +37,11 @@ function App() {
         <Route path='/investor' element={<Investors />}></Route>
         <Route path='/newsroom' element={<Newsroom />}></Route>
         <Route path='/mission' element={<Mission />}></Route>
-        <Route path='/sales' element={<SalesGraph />}></Route>
+        {/* <Route path='/sales' element={<SalesGraph />}></Route> */}
 
         <Route path='/ourpeople' element={<OurPeople />}></Route>
         <Route path="/admin" element={<RequireAuth><AdminDashboard /></RequireAuth>} >
-          {/* <Route path='sales' element={<SalesGraph />}></Route> */}
+          <Route path='sales' element={<SalesGraph />}></Route>
           {/* <Route index element={<MyProfile></MyProfile>}></Route>
           <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
           <Route path="addproduct" element={<RequireAdmin><AddProduct></AddProduct></RequireAdmin>}></Route>

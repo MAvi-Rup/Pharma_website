@@ -4,6 +4,7 @@ import { Navbar, Nav, Container, Row, Col, NavDropdown } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import SalesGraph from "./SalesGraph";
+import { Link, Outlet } from 'react-router-dom';
 
 const AdminDashboard = () => {
     const navigate = useNavigate();
@@ -30,7 +31,7 @@ const AdminDashboard = () => {
                 <Row>
                     <Col md={2} style={{ backgroundColor: "#f2f2f2" }}>
                         <Nav defaultActiveKey="/home" className="flex-column">
-                            <Nav.Link href="#">Dashboard</Nav.Link>
+                            <Link className="nav-link" to="/admin">Dashboard</Link>
                             <Nav.Link href="#">All Employees</Nav.Link>
                             {/* <NavDropdown title="Reports" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#">Sales Report</NavDropdown.Item>
@@ -42,7 +43,7 @@ const AdminDashboard = () => {
                                 Reports
                             </Nav.Link>
                             <div class="collapse ms-3" id="collapseExample">
-                            <Nav.Link href="#">Sales Report</Nav.Link>
+                            <Link className="nav-link" to="sales">Sales Report</Link>
                             <Nav.Link href="#">Gross Revenue</Nav.Link>
                             <NavDropdown.Divider />
                             <Nav.Link href="#">Yearly Sales</Nav.Link>
@@ -52,6 +53,7 @@ const AdminDashboard = () => {
                     </Col>
                     <Col md={10}>
                         <h1>Welcome to the Admin Dashboard</h1>
+                        <Outlet></Outlet>
                         
                     </Col>
                 </Row>
