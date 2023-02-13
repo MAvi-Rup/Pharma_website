@@ -17,9 +17,12 @@ import OurProductRange from './Components/Pages/Products/OurProductRange';
 import CompanyInfo from './Components/Pages/Investor/CompanyInfo';
 import HealthCOncern from './Components/Pages/Health/HealthCOncern';
 import ContactUs from './Components/Pages/ContactUs';
-import Login from './Components/Pages/Login/Login';
+
 import Signup from './Components/Pages/Login/Signup';
 import Signin from './Components/Pages/Login/Signin';
+import AdminDashboard from './Components/Pages/Dashboard/AdminDashboard';
+import SalesGraph from './Components/Pages/Dashboard/SalesGraph';
+import RequireAuth from './Components/RequireAuth';
 
 
 function App() {
@@ -34,7 +37,21 @@ function App() {
         <Route path='/investor' element={<Investors />}></Route>
         <Route path='/newsroom' element={<Newsroom />}></Route>
         <Route path='/mission' element={<Mission />}></Route>
+        <Route path='/sales' element={<SalesGraph />}></Route>
+
         <Route path='/ourpeople' element={<OurPeople />}></Route>
+        <Route path="/admin" element={<RequireAuth><AdminDashboard /></RequireAuth>} >
+          {/* <Route path='sales' element={<SalesGraph />}></Route> */}
+          {/* <Route index element={<MyProfile></MyProfile>}></Route>
+          <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
+          <Route path="addproduct" element={<RequireAdmin><AddProduct></AddProduct></RequireAdmin>}></Route>
+          <Route path="manageproduct" element={<RequireAdmin><ManageProducts></ManageProducts></RequireAdmin>}></Route>
+          <Route path="confirmorder" element={<RequireAdmin><AllOrders></AllOrders></RequireAdmin>}></Route>
+          <Route path="addreview" element={<AddReview></AddReview>}></Route> */}
+          {/* <Route path="myorder" element={<MyHistory></MyHistory>}></Route>
+          <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
+          <Route path="addproduct" element={<RequireAdmin><AddDoctor></AddDoctor></RequireAdmin>}></Route> */}
+        </Route>
         <Route path='/company-info' element={<CompanyInfo />}></Route>
         <Route path='/contact-us' element={<ContactUs />}></Route>
         <Route path='/product-range' element={<OurProductRange />}></Route>

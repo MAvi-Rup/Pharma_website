@@ -1,11 +1,20 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from './../firebase.init';
 
 const Navbar = () => {
+  const [user] = useAuthState(auth);
+  const logout = () => {
+    signOut(auth);
+};
   return (
     <div>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+        {
+          !user ? 
+          <div class="container-fluid">
           <Link class="navbar-brand" to="/">
             <img src="./favicon.png" alt="Home" width="30" height="24" />
           </Link>
@@ -74,7 +83,7 @@ const Navbar = () => {
             </ul>
             <ul className='navbar-nav ms-auto mb-5 mb-lg-0'>
               <li className='nav-item me-4'>
-                <Link className='nav-link' to='/login'>Login</Link>
+              <Link className='nav-link' to='/login'>Login</Link>
 
               </li>
 
@@ -84,7 +93,11 @@ const Navbar = () => {
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form> */}
           </div>
+        </div>:
+        <div>
         </div>
+
+        }
       </nav>
     </div>
   );
