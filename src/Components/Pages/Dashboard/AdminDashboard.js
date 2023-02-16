@@ -33,6 +33,7 @@ const AdminDashboard = () => {
                         <Nav defaultActiveKey="/home" className="flex-column">
                             <Link className="nav-link" to="/admin">Dashboard</Link>
                             <Link className="nav-link" to="all-employee">All Employee</Link>
+                            <Link className="nav-link" to="add-employee">ADD Employee</Link>
                             
                             {/* <NavDropdown title="Reports" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#">Sales Report</NavDropdown.Item>
