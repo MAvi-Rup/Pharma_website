@@ -7,7 +7,7 @@ const AllProducts = () => {
     const [isCompleted, setIsCompleted] = useState(false)
     // const [allProducts,setProduct]= useState([])
     // useEffect(()=>{
-    //     fetch(`http://localhost:5000/allProducts`)
+    //     fetch(`http://localhost:5001/allProducts`)
     //     .then(res=>res.json())
     //     .then(data=>setProduct(data))
     // })

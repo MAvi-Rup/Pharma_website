@@ -5,7 +5,7 @@ const ProductDetails = () => {
     const { id } = useParams()
     const [product, setProduct] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/specialProducts/${id}`)
+        fetch(`http://localhost:5001/specialProducts/${id}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     },[id])

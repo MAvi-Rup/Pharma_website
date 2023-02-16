@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 const SpecialProducts = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/specialProducts')
+        fetch('http://localhost:5001/specialProducts')
             .then(res => res.json())
             .then(data => setProducts(data))
     },[])
