@@ -1,50 +1,66 @@
-import React, { useState } from "react";
-import QrCode from "qrcode.react";
+//PrintQRCode
+
+import React, { useState, useRef } from 'react';
+import QrCode from 'qrcode.react';
+import { useReactToPrint } from 'react-to-print';
 
 const PrintQRCode = () => {
-  const [users, setUsers] = useState([]);
-  const [newUser, setNewUser] = useState("");
+  const [userInfo, setUserInfo] = useState({ name: '', email: '', phone: '', address: '' });
+  const qrCodeRef = useRef();
 
-  // Function to generate unique ID for each user
-  const generateId = () => {
-    const maxId = users.length > 0 ? Math.max(...users.map((u) => u.id)) : 0;
-    return maxId + 1;
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setUserInfo({ ...userInfo, [name]: value });
   };
 
-  // Function to add new user profile
-  const handleAddUser = (event) => {
+  const handlePrint = useReactToPrint({
+    content: () => qrCodeRef.current,
+  });
+
+  const handleRegistration = (event) => {
     event.preventDefault();
-    const user = {
-      id: generateId(),
-      name: newUser,
-    };
-    setUsers(users.concat(user));
-    setNewUser("");
+    // Your logic to save user information in a database or server
   };
+
+  const uniqueId = '123456'; // Replace with your logic to generate a unique ID for each user
+  const qrValue = `https://example.com/users/${uniqueId}`;
 
   return (
     <div>
-      <h1>User Profile Generator</h1>
-      <form onSubmit={handleAddUser}>
-        <div>
+      <form onSubmit={handleRegistration}>
+        <label>
           Name:
-          <input
-            value={newUser}
-            onChange={(event) => setNewUser(event.target.value)}
-          />
-        </div>
-        <button type="submit">Add User</button>
+          <input type="text" name="name" value={userInfo.name} onChange={handleChange} />
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" value={userInfo.email} onChange={handleChange} />
+        </label>
+        <label>
+          Phone:
+          <input type="text" name="phone" value={userInfo.phone} onChange={handleChange} />
+        </label>
+        <label>
+          Address:
+          <input type="text" name="address" value={userInfo.address} onChange={handleChange} />
+        </label>
+        <button type="submit">Register</button>
       </form>
-      <hr />
-      <h2>User Profiles</h2>
-      <div>
-        {users.map((user) => (
-          <div key={user.id}>
-            <h3>{user.name}</h3>
-            <QrCode value={`https://example.com/profile/${user.id}`} />
+
+      {userInfo.name && (
+        <div>
+          <h2>User Profile</h2>
+          <p>Name: {userInfo.name}</p>
+          <p>Email: {userInfo.email}</p>
+          <p>Phone: {userInfo.phone}</p>
+          <p>Address: {userInfo.address}</p>
+
+          <div ref={qrCodeRef}>
+            <QrCode value={qrValue} />
+            <button onClick={handlePrint}>Print QR Code</button>
           </div>
-        ))}
-      </div>
+        </div>
+      )}
     </div>
   );
 };
