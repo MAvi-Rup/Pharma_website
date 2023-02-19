@@ -54,7 +54,7 @@ const AdminDashboard = () => {
                         </Nav>
                     </Col>
                     <Col md={10}>
-                        <h1>Welcome to the Admin Dashboard</h1>
+                        <h1 className="text-center">Welcome to the Admin Dashboard</h1>
                         <Outlet></Outlet>
                         
                     </Col>
