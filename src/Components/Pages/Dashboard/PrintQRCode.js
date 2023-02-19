@@ -50,7 +50,7 @@ const PrintQRCode = () => {
 
 
    // Replace with your logic to generate a unique ID for each user
-  const qrValue = `https://example.com/users/${userId}`;
+  const qrValue = `http://localhost:3000/admin/all-employee/${userId}`;
 
   return (
     <div className="container mt-5">
@@ -117,7 +117,7 @@ const PrintQRCode = () => {
                 <p className="card-text">Image: {userInfo.imageSrc}</p>
 
                 <div ref={qrCodeRef}>
-                  <QrCode value={qrValue} />
+                  <QrCode value={qrValue}/>
                   
                 </div>
                 <button className="btn btn-secondary mt-3" onClick={handlePrint}>Print QR Code</button>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './AllEmployee.css';
 
 // const employees = [
@@ -73,6 +74,11 @@ useEffect(()=>{
   .then(res=>res.json())
   .then(data=>setEmployees(data))
 })
+
+const navigate = useNavigate()
+    const navigateEmployeeDetails = id => {
+        navigate(`${id}`)
+    }
   return (
     <div className="employee-list">
       {employees.map((employee) => (
@@ -84,6 +90,7 @@ useEffect(()=>{
           <p>Salary: {employee.salary}</p>
           <p>Annual Leave Remaining: {employee.annualLeave}</p>
           <p>Salary: {employee.salary}</p>
+          <button className='btn btn-primary mb-5' onClick={()=>{navigateEmployeeDetails(employee._id)}}>Details</button>
           
         </div>
       ))}

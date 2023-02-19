@@ -27,6 +27,7 @@ import SalesBarChart from './Components/Pages/Dashboard/SalesBarChart';
 import GrossRevenue from './Components/Pages/Dashboard/GrossRevenue';
 import AllEmployee from './Components/Pages/Dashboard/AllEmployee';
 import PrintQRCode from './Components/Pages/Dashboard/PrintQRCode';
+import EmployeeDetails from './Components/Pages/Dashboard/EmployeeDetails';
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
           <Route path='yearly-sales' element={<SalesBarChart />}></Route>
           <Route path='gross-revenue' element={<GrossRevenue />}></Route>
           <Route path='all-employee' element={<AllEmployee />}></Route>
+          <Route path='all-employee/:id' element={<EmployeeDetails />}></Route>
           <Route path='add-employee' element={<PrintQRCode />}></Route>
           {/* <Route index element={<MyProfile></MyProfile>}></Route>
           <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
