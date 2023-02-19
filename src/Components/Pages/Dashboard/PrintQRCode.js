@@ -32,6 +32,8 @@ const PrintQRCode = () => {
     
   });
 
+  const qrValue = `https://example.com/users/${userId}`;
+
   const handleRegistration = (event) => {
     event.preventDefault();
     // Your logic to save user information in a database or server
@@ -41,7 +43,7 @@ const PrintQRCode = () => {
         const { _id } = response.data.insertedId;
         setUserId(_id)
         formRef.current.reset();
-        console.log(response.data.insertedId)
+        console.log(qrValue)
       })
       .catch(error => {
         console.log(error);
@@ -50,7 +52,7 @@ const PrintQRCode = () => {
 
 
    // Replace with your logic to generate a unique ID for each user
-  const qrValue = `http://localhost:3000/admin/all-employee/${userId}`;
+  
 
   return (
     <div className="container mt-5">
@@ -117,7 +119,7 @@ const PrintQRCode = () => {
                 <p className="card-text">Image: {userInfo.imageSrc}</p>
 
                 <div ref={qrCodeRef}>
-                  <QrCode value={qrValue}/>
+                  <QrCode value={qrValue} />
                   
                 </div>
                 <button className="btn btn-secondary mt-3" onClick={handlePrint}>Print QR Code</button>
