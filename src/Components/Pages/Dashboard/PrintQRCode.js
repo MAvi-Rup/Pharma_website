@@ -1,12 +1,12 @@
 //PrintQRCode
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import QrCode from 'qrcode.react';
 import { useReactToPrint } from 'react-to-print';
 import axios from 'axios';
 
 const PrintQRCode = () => {
-  const [userId, setUserId] = useState(null);
+  const [qrCodeValue, setQrCodeValue] = useState(null);
   const [userInfo, setUserInfo] = useState({
     name: '',
     email: '',
@@ -32,24 +32,24 @@ const PrintQRCode = () => {
     
   });
 
-  const qrValue = `https://example.com/users/${userId}`;
+    
+    const handleRegistration = (event) => {
+      event.preventDefault();
+      // Your logic to save user information in a database or server
+      axios.post('http://localhost:5001/employees', userInfo)
+        .then(response => {
+          console.log(response.data);
+          setQrCodeValue(`http://localhost:3000/admin/all-employee/${response.data.insertedId}`);
+          formRef.current.reset();
+          console.log(qrValue)
+          console.log(response.data.insertedId)
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    };
 
-  const handleRegistration = (event) => {
-    event.preventDefault();
-    // Your logic to save user information in a database or server
-    axios.post('http://localhost:5001/employees', userInfo)
-      .then(response => {
-        console.log(response.data);
-        const { _id } = response.data.insertedId;
-        setUserId(_id)
-        formRef.current.reset();
-        console.log(qrValue)
-      })
-      .catch(error => {
-        console.log(error);
-      });
-  };
-
+    const qrValue = qrCodeValue ?? 'null';
 
    // Replace with your logic to generate a unique ID for each user
   
@@ -133,3 +133,7 @@ const PrintQRCode = () => {
 };
 
 export default PrintQRCode;
+
+
+// https://i.ibb.co/qDqPymn/jubu.jpg
+// https://i.ibb.co/DD9XML2/Avi.jpg

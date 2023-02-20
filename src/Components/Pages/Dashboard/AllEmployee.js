@@ -83,7 +83,7 @@ const navigate = useNavigate()
     <div className="employee-list">
       {employees.map((employee) => (
         <div className="employee-card" key={employee.id}>
-          <img className='p-4' src={employee.imageSrc} alt={employee.name} />
+          <img className='p-4 img-fluid' src={employee.imageSrc} alt={employee.name} />
           <h2>{employee.name}</h2>
           <p>Department: {employee.department}</p>
           <p>Age: {employee.age}</p>
