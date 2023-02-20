@@ -92,7 +92,7 @@ const PrintQRCode = () => {
               <input className="form-control" type="text" name="presentAddress" onChange={handleChange} />
             </div>
             <div className="form-group">
-              <label>Present Address:</label>
+              <label>Permanent Address:</label>
               <input className="form-control" type="text" name="permanentAddress" onChange={handleChange} />
             </div>
             <div className="form-group">

@@ -50,7 +50,7 @@ function App() {
           <Route path='yearly-sales' element={<SalesBarChart />}></Route>
           <Route path='gross-revenue' element={<GrossRevenue />}></Route>
           <Route path='all-employee' element={<AllEmployee />}></Route>
-          <Route path='all-employee/:id' element={<EmployeeDetails />}></Route>
+          <Route path='all-employee/:id' element={<RequireAuth><EmployeeDetails /></RequireAuth>}></Route>
           <Route path='add-employee' element={<PrintQRCode />}></Route>
           {/* <Route index element={<MyProfile></MyProfile>}></Route>
           <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
