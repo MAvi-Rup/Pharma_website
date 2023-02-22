@@ -135,5 +135,5 @@ const PrintQRCode = () => {
 export default PrintQRCode;
 
 
-// https://i.ibb.co/qDqPymn/jubu.jpg
+// 
 // https://i.ibb.co/DD9XML2/Avi.jpg
