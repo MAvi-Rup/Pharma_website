@@ -32,7 +32,11 @@ const PrintQRCode = () => {
     
   });
 
-    
+  useEffect(() => {
+    if (qrCodeValue) {
+      handlePrint();
+    }
+  }, [qrCodeValue]);
     const handleRegistration = (event) => {
       event.preventDefault();
       // Your logic to save user information in a database or server
@@ -46,14 +50,9 @@ const PrintQRCode = () => {
         })
         .catch(error => {
           console.log(error);
-        });
+      });
     };
-
     const qrValue = qrCodeValue ?? 'null';
-
-   // Replace with your logic to generate a unique ID for each user
-  
-
   return (
     <div className="container mt-5">
       <div className="row">
@@ -133,7 +132,3 @@ const PrintQRCode = () => {
 };
 
 export default PrintQRCode;
-
-
-// 
-// https://i.ibb.co/DD9XML2/Avi.jpg
