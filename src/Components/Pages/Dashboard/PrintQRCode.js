@@ -98,7 +98,7 @@ const PrintQRCode = () => {
               <label>Image Src:</label>
               <input className="form-control" type="text" name="imageSrc" onChange={handleChange} />
             </div>
-            <button className="btn btn-primary mt-4" type="submit">Register</button>
+            <button className="btn btn-primary mt-4 mb-4" type="submit">Register</button>
           </form>
         </div>
         {userInfo.name && (

@@ -91,7 +91,6 @@ const navigate = useNavigate()
           <p>Annual Leave Remaining: {employee.annualLeave}</p>
           <p>Salary: {employee.salary}</p>
           <button className='btn btn-primary mb-5' onClick={()=>{navigateEmployeeDetails(employee._id)}}>Details</button>
-          
         </div>
       ))}
     </div>
