@@ -6,9 +6,7 @@ import auth from './../firebase.init';
 
 const Navbar = () => {
   const [user] = useAuthState(auth);
-  const logout = () => {
-    signOut(auth);
-};
+
   return (
     <div>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
